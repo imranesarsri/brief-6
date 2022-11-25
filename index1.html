@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/style/style.css" />
+  </head>
+  <body>
+    <main>
+      <form action="page2.html" id="forma">
+        <div class="section1">
+          <h1>CLUB SOLICODE</h1>
+          <p>
+            Bienvenue dans mon club de colicode, nous avons dedie ce club , leur
+            offrir des moments agréables d'échange et d'épanouissement, Solicode
+            a pensé à créer des activités parascolaires sous forme de clubs
+            (informatique, robotique, jeux d'échecs, foot,musique, théatre).
+            Pour cela, on vous demande de réaliser un formulaire d'inscription
+            permettant aux apprenants de s'inscrire à un ou plusieurs clubs.
+          </p>
+        </div>
+        <!-- Les informations  -->
+        <div class="section2">
+          <h2>Les informations :</h2>
+          <div class="informations">
+            <div class="inp1">
+              <label for="nom" id="labelnom">Nom :</label><br />
+              <input class="inp" type="text" id="nom" />
+              <p class="p-resolt" id="erorrNom"></p>
+            </div>
+            <div class="inp2">
+              <label for="prénom" id="labelprenom">Prénom :</label><br />
+              <input class="inp" type="text" id="prénom" />
+              <p class="p-resolt" id="erorrPrénom"></p>
+            </div>
+            <div class="inp3">
+              <label for="email" id="labelemail">Email :</label><br />
+              <input class="inp" type="text" id="email" />
+              <p class="p-resolt" id="erorrEmail"></p>
+            </div>
+            <div class="inp4">
+              <label for="télephone" id="labeltelephone">Télephone :</label
+              ><br />
+              <input class="inp" type="text" id="télephone" />
+              <p class="p-resolt" id="erorrTélephone"></p>
+            </div>
+          </div>
+        </div>
+        <!-- Genre  -->
+        <div class="section3">
+          <h2>Genre :</h2>
+          <input type="radio" value="féminin" class="genre" id="Féminin" name="genre"/>
+          <label for="Féminin">Féminin</label><br />
+          <input type="radio" value="masculin" class="genre" id="Masculin" name="genre"/>
+          <label for="Masculin">Masculin</label>
+          <p class="p-resolt" id="erorrGenre"></p>
+        </div>
+        <!-- Groupe -->
+        <div class="section4">
+          <h2>Groupe :</h2>
+          <div class="Groupe">
+            <div>
+              <input type="radio" value="dw101" id="dw101" name="legroupe" />
+              <label for="dw101">DW101</label>
+            </div>
+            <div>
+              <input type="radio" value="dw102" id="dw102" name="legroupe" />
+              <label for="dw102">DW102</label>
+            </div>
+            <div>
+              <input type="radio" value="dw103" id="dw103" name="legroupe" />
+              <label for="dw103">DW103</label>
+            </div>
+            <div>
+              <input type="radio" value="dm101" id="dm101" name="legroupe" />
+              <label for="dm101">DM101</label>
+            </div>
+            <div>
+              <input type="radio" value="dm102" id="dm102" name="legroupe" />
+              <label for="dm102">DM102</label>
+            </div>
+          </div>
+          <p class="p-resolt" id="erorrGroupe"></p>
+        </div>
+        <!-- Club -->
+        <div class="section5">
+          <h2>Club(s) :</h2>
+          <select name="club" id="club" multiple>
+            <option value="informatique">informatique</option>
+            <option value="robotique">robotique</option>
+            <option value="jeu-d'échecs">Jeu d'échecs</option>
+            <option value="musique">Musique</option>
+            <option value="foot">Foot</option>
+            <option value="théatre">Théatre</option>
+          </select>
+          <p class="p-resolt" id="erorrclub"></p>
+        </div>
+        <button type="submit" id="button">valide</button>
+      </form>
+    </main>
+    <script src="/main1.js"></script>
+  </body>
+</html>

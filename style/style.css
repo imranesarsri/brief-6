@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    color: #fff;
+}
+form {
+    background-image:url("/image/iii.png"); 
+    background-size: cover; 
+    height: 200vh; 
+    display: grid;
+    grid-template-columns:2fr 8fr 2fr;
+    grid-template-rows:repeat(12,auto);
+    grid-template-areas: ". . ." ". . ." ". . ." ". sect1 ."  ". sect2 ."  ". sect3 ."  ". sect4 ." ". sect5 ." ". butt ." ". . ." ". . ." ;
+} 
+.section1 {
+    padding:20px 5% 5px;
+    grid-area: sect1;
+    background-color:rgba(120, 49, 49, 0.53);
+    border-radius: 10px 10px 0 0;
+}
+.section2 {
+    padding:5px 5%;
+    grid-area: sect2;
+    background-color:rgba(120, 49, 49, 0.53);
+}
+.section3 {
+    padding:5px 5%;
+    grid-area: sect3;
+    background-color: rgba(120, 49, 49, 0.53);
+}
+.section4 {
+    padding:5px 5%;
+    grid-area: sect4;
+    background-color:rgba(120, 49, 49, 0.53);
+}
+.section5 {
+    padding:5px 5%;
+    grid-area: sect5;
+    background-color:rgba(120, 49, 49, 0.53);
+} 
+button {
+    grid-area: butt;
+    border-radius: 0 0 10px 10px;
+    border: none;
+}
+button:hover {
+    
+    border-radius: 0 0 10px 10px;
+    border: none;
+    background-color: black;
+    color: #fff;
+}
+h1 {
+    margin-bottom: 20px;
+}
+h2 {
+    color:rgb(241, 255, 242) ;
+    margin-bottom: 10px;
+}
+.inp {
+    width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+.informations {
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:1fr 1fr;
+    grid-template-areas:"inp1 inp2" "inp3 inp4";
+    gap: 20px;
+}
+.inp1 {
+    grid-area:inp1;
+}
+.inp2 {
+    grid-area:inp2;
+}
+.inp3 {
+    grid-area:inp3;
+}
+.inp4 {
+    grid-area:inp4;
+}
+.Groupe {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+select {
+    width: 40%;
+    color: #000000;
+    background-color: #ffffff;
+    margin-left: 30%;
+    border: none;
+    height: 70%;
+    border-radius: 10px;
+    text-align: center;
+    margin: 5px;
+    margin-left: 30%;
+    outline: none;
+}
+option {
+    padding: 10px 0;
+}
+.p-resolt {
+    color: red;
+    margin: 5px 0;
+    font-size: 20px;
+}
+@media (max-width:800px){
+    form {
+        grid-template-columns:1fr 8fr 1fr;
+    } 
+}
+@media (max-width:500px) {
+    form {
+        grid-template-columns:0fr 8fr 0fr;
+    } 
+}
